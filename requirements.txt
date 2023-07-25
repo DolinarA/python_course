@@ -4,3 +4,6 @@ openpyxl==3.1.2
 pdfkit==1.0.0
 matplotlib
 xlrd
+beautifulsoup4==4.12.2
+selenium
+webdriver-manager==3.8.6

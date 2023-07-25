@@ -5,9 +5,12 @@ import time
 from typing import Union
 
 import pdfkit
+from bs4 import BeautifulSoup
 
 BASE_TAXON_URL = "https://gd.eppo.int/taxon/"
 BASE_SEARCH_URL = "https://gd.eppo.int/search?k="
+# system path for wkhtmltopdf: c:/program files/wkhtmltopdf/bin
+# copy to paths (Control panel – environmental variables -> path -> edit->new)
 # if system path doesn't work, specify it using WKHTMLTOPDF_EXECUTABLE
 # here and in functions that use convert_webpage_to_pdf function
 # WKHTMLTOPDF_EXECUTABLE = r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
@@ -38,7 +41,7 @@ def convert_webpage_to_pdf(
 
 
 def get_taxon_code_from_url(url: str) -> list[str]:
-    pass
+    
     # search rezultate preprasate v html
     # request.get(url)
     # https://realpython.com/beautiful-soup-web-scraper-python/
