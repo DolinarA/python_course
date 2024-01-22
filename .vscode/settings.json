@@ -8,7 +8,7 @@
     "python.formatting.provider": "none",
     "python.linting.lintOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     },
     "[python]": {
       "editor.defaultFormatter": "ms-python.black-formatter",
